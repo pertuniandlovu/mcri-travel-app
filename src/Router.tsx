@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import ExamplePage from "./pages/ExamplePage/ExamplePage";
+import PackingList from "./pages/PackingList/PackingList";
 
 export const router = createBrowserRouter([
   {
@@ -11,16 +12,17 @@ export const router = createBrowserRouter([
     path: "example",
     element: <ExamplePage />,
   },
-  // {
-  //   path: "packing",
-  //   element: <PackingList />,
+  {
+    path: "packing",
+    element: <PackingList />,
+  },
   // },
   // {
   //   path: "flights",
   //   element: <FlightInfo />,
   // },
   // {
-  //   path: "sightseeing",
+  //   path: "Pokemon",
   //   element: <Sightseeing />,
-      // },
+  //     },
 ]);
